@@ -3,19 +3,28 @@ The most advanced network security tool
 
 # Help & Usage
 
-exploitaion commands:
-    scan (scan all machines in a network)
-    vulnscan (scan all the machines in a network and list their vulnebilities)
-    routeping (ping the Network's router)
-    webscan (scan for a web server in the network)
-    pktsniff (sniff the packets of the network)
-    malpktinject (Inject malacious packets to the network)
-    ipaddrlist (Show the IP addresses and the MAC addresses of the hosts on the network")
-    dnmitm (Launch a Man in the Middle Attack)
-security commands:
-    uspktscan (Scan for Suspicios packets)
-    dtrhkr (Determine if a Attacker is in your Network)
-    hkrvulnscan (Scan the Attacker's machine for vulnebilities)
+1. exploitaion commands:
+    * scan (scan all machines in a network)
+    * vulnscan (scan all the machines in a network and list their vulnebilities)
+    * routeping (ping the Network's router)
+    * webscan (scan for a web server in the network)
+    * pktsniff (sniff the packets of the network)
+    * malpktinject (Inject malacious packets to the network)
+    * ipaddrlist (Show the IP addresses and the MAC addresses of the hosts on the network")
+    * dnmitm (Launch a Man in the Middle Attack)
+2. security commands:
+    * uspktscan (Scan for Suspicios packets)
+    * dtrhkr (Determine if a Attacker is in your Network)
+    * hkrvulnscan (Scan the Attacker's machine for vulnebilities)
+
+# Supported Distributions
+
+1. Kali Linux
+2. Parrot OS Security Edition
+3. Debian 11
+4. Backbox
+5. Blackarch Linux
+6. Ubuntu 22.04 LTS
     
 
 # Screenshots
