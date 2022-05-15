@@ -25,6 +25,7 @@ The most advanced network security tool
 4. Backbox
 5. Blackarch Linux
 6. Ubuntu 22.04 LTS
+7. Fedora 36
     
 
 # Screenshots
