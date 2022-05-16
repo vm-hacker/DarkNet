@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 import colorama
 from colorama import Fore
 from art import *
@@ -6,14 +6,7 @@ import sys
 import os
 import time
 
-for i in range(1):
-    print(" <<-------------- Copyright (c) Netwrk-3, Inc. All rights reserved ---------------->> ")
-    tprint("DarkNet")
-    print("\033[1;32m DarkNet version 0.1.0")
-    print(Fore.RED + " The most advanced Network Security tool ")
-    print(Fore.BLUE + " Developed by Venkatesh Mishra ")
-
-    print(Fore.GREEN + " URL --> https://github.com/vm-hacker/darknet ")
+def help_menu():
     print(Fore.YELLOW + " [!] Help menu ")
     print(Fore.WHITE + """
   usage:
@@ -34,20 +27,14 @@ for i in range(1):
     shell (Load the darknet shell)
 """)
 
-def help():
-    print(Fore.WHITE + """
- usage:
-    scan (scan all machines in a network)
-    vulnscan (scan all the machines in a network and list their vulnebilities)
-    routeping (ping the Network's router)
-    webscan (scan for a web server in the network)
-    pktsniff (sniff the packets of the network)
-    malpktinject (Inject malacious packets to the network)
-    ipaddrlist (Show the IP addresses and the MAC addresses of the hosts on the network")
-    dnmitm (Launch a Man in the Middle Attack)
- arguments:
-    shell (Load the darknet shell)
-""")
+for i in range(1):
+    print(" <<-------------- Copyright (c) Netwrk-3, Inc. All rights reserved ---------------->> ")
+    tprint("DarkNet")
+    print("\033[1;32m DarkNet version 0.1.0")
+    print(Fore.RED + " The most advanced Network Security tool ")
+    print(Fore.BLUE + " Developed by Venkatesh Mishra ")
+
+    print(Fore.GREEN + " URL --> https://github.com/vm-hacker/darknet ")
 
 def shell():
     cmd = input(Fore.YELLOW + "λ Darknet " + Fore.RED + ">" + Fore.GREEN + ">" + Fore.BLUE + "> ")
@@ -72,7 +59,7 @@ def shell():
         print(Fore.RED + " [!] Error: Cloud not execute routeping\n")
     elif cmd == "help":
         for i in range(1):
-            help()
+            help_menu()
         
 
     else:
@@ -90,8 +77,12 @@ if __name__ == "__main__":
                     shell()
             elif arg == "hack":
                 print(Fore.GREEN + " Hacking ain't done like this!  ")
+            elif arg == "help":
+                for i in range(1):
+                    help_menu()
             else:
                 print(Fore.RED + " [!] Error: Please enter a valid argument ")
 
 else:
-    pass
+    for i in range(1):
+        pass
