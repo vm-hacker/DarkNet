@@ -30,5 +30,3 @@ The most advanced network security tool
 
 # Screenshots
 ![image](https://user-images.githubusercontent.com/104187311/168632358-6d768cd0-d0c7-4cb3-bf82-10afcd08e2df.png)
-![image](https://user-images.githubusercontent.com/104187311/168477002-c0ae04b8-0aac-47ef-9928-f1f595250b93.png)
-![image](https://user-images.githubusercontent.com/104187311/168477041-b6dad5b9-18f0-45d8-b25b-43e2bf1b1c85.png)
