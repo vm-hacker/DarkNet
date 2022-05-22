@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
+
 import colorama
 from colorama import Fore
 from art import *
 import sys
 import os
 import time
+#import nmap
 
 def help_menu():
     print(Fore.YELLOW + " [!] Help menu ")
@@ -29,12 +31,15 @@ def help_menu():
 
 for i in range(1):
     print(" <<-------------- Copyright (c) Netwrk-3, Inc. All rights reserved ---------------->> ")
-    tprint("DarkNet")
-    print("\033[1;32m DarkNet version 0.1.0")
+    #tprint("DarkNet") 
+   # Art=text2art("Darknet",font='circle',chr_ignore=True)
+    #print(Art) 
+    tprint("Darknet","rnd-xlarge")
+    print("\033[1;32m DarkNet version 0.1.1")
     print(Fore.RED + " The most advanced Network Security tool ")
     print(Fore.BLUE + " Developed by Venkatesh Mishra ")
 
-    print(Fore.GREEN + " URL --> https://github.com/vm-hacker/darknet ")
+    print(Fore.YELLOW + " URL --> https://github.com/vm-hacker/darknet ")
 
 def shell():
     cmd = input(Fore.YELLOW + "λ Darknet " + Fore.RED + ">" + Fore.GREEN + ">" + Fore.BLUE + "> ")
@@ -52,16 +57,31 @@ def shell():
         print(Fore.YELLOW + "Scan Completed!\n")
     elif cmd == "netwrkdn":
         print(Fore.GREEN + "Bringing down Network... ")
-        for i in range(21):
+        for i in range(101):
             sys.stdout.write('\r')
-            sys.stdout.write("[%-20s] %d%%" % ('#'*i, 5*i))
-            time.sleep(0.1)
-        print(Fore.RED + " [!] Error: Cloud not execute routeping\n")
-    elif cmd == "help":
+            sys.stdout.write("[%-100s] %d%%" % ('#'*i, 1*i))
+            time.sleep(0.25)
+        
+    elif cmd == "routeping":
+        print(Fore.GREEN + "Determining router... \n")
+        for i in range(101):
+            sys.stdout.write('\r')
+            sys.stdout.write("[%-100s] %d%%" % ('#'*i, 1*i))
+            time.sleep(0.25)
+        
+        print("Resolving DNS... \n")
+        for i in range(101):
+            sys.stdout.write('\r')
+            sys.stdout.write("[%-100s] %d%%" % ('#'*i, 1*i))
+            time.sleep(0.25)
+
+        print(Fore.YELLOW + " [!] Found target network's router. ")
+    
+    elif cmd == "?":
         for i in range(1):
             help_menu()
         
-
+    # Execute shell commands from dn shell.
     else:
         for i in range(1):
             os.system(cmd)
@@ -77,7 +97,7 @@ if __name__ == "__main__":
                     shell()
             elif arg == "hack":
                 print(Fore.GREEN + " Hacking ain't done like this!  ")
-            elif arg == "help":
+            elif arg == "--help":
                 for i in range(1):
                     help_menu()
             else:
