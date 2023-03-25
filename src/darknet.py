@@ -6,7 +6,7 @@ from art import *
 import sys
 import os
 import time
-#import nmap
+import scannet
 
 def help_menu():
     print(Fore.YELLOW + " [!] Help menu ")
@@ -34,7 +34,7 @@ for i in range(1):
     #tprint("DarkNet") 
    # Art=text2art("Darknet",font='circle',chr_ignore=True)
     #print(Art) 
-    tprint("Darknet","rnd-xlarge")
+    tprint("Darknet")
     print("\033[1;32m DarkNet version 0.1.1")
     print(Fore.RED + " The most advanced Network Security tool ")
     print(Fore.BLUE + " Developed by Venkatesh Mishra ")
@@ -42,19 +42,15 @@ for i in range(1):
     print(Fore.YELLOW + " URL --> https://github.com/vm-hacker/darknet ")
 
 def shell():
-    cmd = input(Fore.YELLOW + "λ Darknet " + Fore.RED + ">" + Fore.GREEN + ">" + Fore.BLUE + "> ")
+    cmd = input(Fore.YELLOW + "λ Darknet " + Fore.RED + ">" + Fore.GREEN + ">" + Fore.BLUE + "> " + Fore.WHITE)
     if cmd == "exit":
         for i in range(1):
             sys.exit()
     elif cmd == "scan":
-        time.sleep(1)
-        print(Fore.GREEN + "Scanning...\n")
-        for i in range(101):
-            sys.stdout.write('\r')
-            sys.stdout.write("[%-100s] %d%%" % ('#'*i, 1*i))
-            time.sleep(0.25)
-        
-        print(Fore.YELLOW + "Scan Completed!\n")
+        time.sleep(1) 
+        #print(Fore.GREEN + "Scanning your network...")
+        scannet.scan()
+        print(Fore.GREEN + "Scan Completed!\n")
     elif cmd == "netwrkdn":
         print(Fore.GREEN + "Bringing down Network... ")
         for i in range(101):
