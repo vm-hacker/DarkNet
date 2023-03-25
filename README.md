@@ -19,13 +19,14 @@ The most advanced network security tool
 
 # Supported Distributions
 
-1. Kali Linux
-2. Parrot OS Security Edition
-3. Debian 11
-4. Backbox
+1. Kali Linux (2022.3+)
+2. Parrot OS Security Edition (5.1+)
+3. Debian (11.2 +)
+4. Backbox 
 5. Blackarch Linux
-6. Ubuntu 22.04 LTS
-7. Fedora 36
+6. Ubuntu (20.04+)
+7. Fedora (36+)
+8. Manjaro
     
 
 # Screenshots
