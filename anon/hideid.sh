@@ -1,7 +1,7 @@
 #!/bin/bash
 
                 #################### Anonstrike ####################
-                #            Hack without being caught             #
+                #            Test without being caught             #
                 #            Developed & Maintained by:            #
                 #   Netwrk-3, Inc: https://github.com/Netwrk-3     #
                 #  Venkatesh Mishra: https://github.com/vm-hacker  #
